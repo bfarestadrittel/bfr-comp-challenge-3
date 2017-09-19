@@ -9,10 +9,13 @@ body {
 	margin: 0;
 }
 
+/*01. Left Sidebar Formatting*/
+
 .left-sidebar {
 	background-color: #354052;
 	color: #A6B1C3;
 	height: 100%;
+	width: 300px;
 }
 
 .user-profile {
@@ -78,3 +81,52 @@ li {
  	margin-right: 8px;
  	width: 20px;
  }
+
+ /*02. Top Search Formatting*/
+
+ .top-search-area {
+ 	display: flex;
+ 	flex-direction: row;
+ 	height: 100px;
+ 	width: 85vw;
+ }
+
+ .search-icon {
+ 	height: 50px;
+ 	margin-top: 15px;
+ 	width: 50px;
+ }
+
+ .search-area-icon-0 {
+ 	background-image: url('images/interface.svg');
+ 	background-size: 30px 30px;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ }
+
+.search-area-icon-2 {
+	background-image: url('images/social.svg');
+	background-size: 30px 30px;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+}
+
+.search-area-icon-3 {
+	background-image: url('images/time.svg');
+	background-size: 30px 30px;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+}
+
+.search-area-icon-4 {
+	background-image: url('images/squares.svg');
+	background-size: 30px 30px;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+}
+
+.search-input {
+	height: 50px;
+	margin-top: 15px;
+	width: 60vw;
+}
