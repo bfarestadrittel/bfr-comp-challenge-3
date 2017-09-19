@@ -15,7 +15,7 @@ body {
 	background-color: #354052;
 	color: #A6B1C3;
 	height: 100%;
-	width: 300px;
+	width: 15%;
 }
 
 .user-profile {
@@ -84,17 +84,22 @@ li {
 
  /*02. Top Search Formatting*/
 
+ .right-section {
+ 	width: 80%;
+ }
+
  .top-search-area {
+ 	border: 2px solid red;
  	display: flex;
  	flex-direction: row;
- 	height: 100px;
- 	width: 85vw;
+ 	height: 75px;
+ 	width: 100%;
  }
 
  .search-icon {
- 	height: 50px;
+ 	height: 30px;
  	margin-top: 15px;
- 	width: 50px;
+ 	width: 30px;
  }
 
  .search-area-icon-0 {
@@ -102,6 +107,8 @@ li {
  	background-size: 30px 30px;
  	background-position: center;
  	background-repeat: no-repeat;
+ 	border: 2px solid red;
+ 	padding: 25px;
  }
 
 .search-area-icon-2 {
@@ -109,6 +116,8 @@ li {
 	background-size: 30px 30px;
  	background-position: center;
  	background-repeat: no-repeat;
+ 	border: 2px solid red;
+ 	padding: 25px;
 }
 
 .search-area-icon-3 {
@@ -116,6 +125,8 @@ li {
 	background-size: 30px 30px;
  	background-position: center;
  	background-repeat: no-repeat;
+ 	border: 2px solid red;
+ 	padding: 25px;
 }
 
 .search-area-icon-4 {
@@ -123,10 +134,168 @@ li {
 	background-size: 30px 30px;
  	background-position: center;
  	background-repeat: no-repeat;
+ 	border: 2px solid red;
+ 	padding: 25px;
 }
 
 .search-input {
+	border: none;
 	height: 50px;
 	margin-top: 15px;
 	width: 60vw;
 }
+
+/*03. Title Section Formatting*/
+
+.title-box {
+	align-items: center;
+	border: 2px solid red;
+	display: flex;
+	height: 180px;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.position-title-box {
+	margin-left: 35px;
+}
+
+/*04. Tab Links Formatting*/
+
+.tab-button-list {
+	border: 2px solid red;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 35px;
+	width: 80%;
+}
+
+.tab-button {
+	color: #9BA2AD;
+}
+
+/*05. Graph Section Formatting*/
+
+.graph-section {
+	background-color: #EDF2F6;
+	border: 2px solid red;
+	display: flex;
+	height: 300px;
+	width: 100%;
+}
+
+.circle-graphs {
+	border: 2px solid red;
+	height: 300px;
+	width: 50%;
+}
+
+.graph-box {
+	border: 2px solid red;
+	height: 300px;
+	width: 50%;
+}
+
+/*06. Job Description Section Formatting*/
+
+.bottom-section {
+	background-color: #EDF2F6;
+	border: 2px solid red;
+	display: flex;
+	width: 100%;
+}
+
+/*07. Job Description Info Formatting*/
+
+.full-description {
+	background-color: #fff;
+	border: 2px solid red;
+}
+
+.job-description {
+	align-items: center;
+	background-color: #6F7E95;
+	border: 2px solid red;
+	color: #fff;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.job-description-title {
+	margin-left: 15px;
+}
+
+.description-info {
+	align-items: center;
+	border-bottom: 1px solid red;
+	display: flex;
+}
+
+.description-title {
+	margin-left: 15px;
+	width: 150px;
+}
+
+.description-info-text {
+	margin-left: 50px;
+}
+
+/*08. Sharing Job Section Formatting*/
+
+.share-job-section {
+	border: 2px solid red;
+}
+
+.facebook,
+.twitter,
+.linkedin {
+	border: 2px solid red;
+	color: #fff;
+	text-align: center;
+}
+
+.facebook {
+	background-color: #3B5998;
+}
+
+.twitter {
+	background-color: #1dcaff;
+}
+
+.linkedin {
+	background-color: #007bb6;
+}
+
+.job-links-section {
+	border: 2px solid red;
+}
+
+.sharing-titles {
+	border: 2px solid red;
+}
+
+.sharing-descriptions {
+	border: 2px solid red;
+}
+
+.share-job-box {
+	border: 2px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
