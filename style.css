@@ -1,3 +1,21 @@
+/*Table of Contents*/
+/*00. Global*/
+/*01. Left Sidebar Formatting*/
+/*02. Top Search Formatting*/
+/*03. Company & Title Section Formatting*/
+/* 03A. Buttons*/
+/*04. Tab Links Formatting*/
+/*05. Graph Section Formatting*/
+/*06. Job Description Section Container Formatting*/
+/*07. Job Description Info Formatting*/
+/*08. Sharing Job Section Formatting*/
+/*09. Responsive*/
+
+/*/////////////////////////////////////////////////////////////*/
+
+/*00. Global*/
+
+
 * {
 	box-sizing: border-box;
 	outline: none;
@@ -11,7 +29,9 @@ body {
 	margin: 0;
 }
 
+
 /*01. Left Sidebar Formatting*/
+
 
 .left-sidebar {
 	background-color: #354052;
@@ -95,7 +115,9 @@ li:hover {
  	width: 20px;
  }
 
+
  /*02. Top Search Formatting*/
+
 
  .right-section {
  	width: 100%;
@@ -174,7 +196,9 @@ li:hover {
 	width: 60vw;
 }
 
+
 /*03. Company & Title Section Formatting*/
+
 
 .title-box {
 	align-items: center;
@@ -204,7 +228,9 @@ li:hover {
 	text-decoration: underline;
 }
 
+
 /* 03A. Buttons*/
+
 
 .title-buttons {
 	display: flex;
@@ -257,7 +283,9 @@ li:hover {
 	background-color: #fff;
 }
 
+
 /*04. Tab Links Formatting*/
+
 
 .tab-button-list {
 	background-color: #fff;
@@ -282,7 +310,9 @@ li:hover {
 	color: #585858;
 }
 
+
 /*05. Graph Section Formatting*/
+
 
 .graph-section {
 	background-color: #EDF2F6;
@@ -340,7 +370,9 @@ li:hover {
 	width: 150px;
 }
 
-/*06. Job Description Section Formatting*/
+
+/*06. Job Description Section Container Formatting*/
+
 
 .bottom-section {
 	background-color: #EDF2F6;
@@ -349,7 +381,9 @@ li:hover {
 	width: 100%;
 }
 
+
 /*07. Job Description Info Formatting*/
+
 
 .full-description {
 	background-color: #fff;
@@ -518,6 +552,7 @@ li:hover {
 }
 
 @media (max-width: 1000px) {
+	
 	.left-sidebar {
 		display: none;
 	}
@@ -568,12 +603,14 @@ li:hover {
 }
 
 @media (max-width: 650px) {
+	
 	.tab-button-list {
 		display: none;
 	}
 }
 
 @media (max-width: 600px) {
+	
 	.title-box {
 		align-items: center;
 		display: flex;
@@ -601,6 +638,7 @@ li:hover {
 }
 
 @media (max-width: 420px) {
+	
 	.graph-section,
 	.graph-and-button {
 		display: none;
@@ -613,6 +651,7 @@ li:hover {
 }
 
 @media (max-width: 350px) {
+	
 	.position-title {
 		font-size: 16px;
 	}
