@@ -4,4 +4,4 @@ This was a layout challenge to build some type of job seeking site. While there 
 
 Original:
 
-(http://frontend.turing.io/assets/images/static-comp-challenge-3.jpg)
+![original](http://frontend.turing.io/assets/images/static-comp-challenge-3.jpg)
