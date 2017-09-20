@@ -8,4 +8,4 @@ Original:
 
 My Version:
 
-![my version](https://drive.google.com/file/d/0B14sikr0GI_CZS1Gb0ZkMGRhNjg/view?usp=sharing)
+[my version](https://drive.google.com/file/d/0B14sikr0GI_CZS1Gb0ZkMGRhNjg/view?usp=sharing)
