@@ -4,6 +4,7 @@
 	<title>George Costanza - Architect</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="normalize.css" rel="stylesheet">
+	<link href="circle.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link href="style.css" type="text/css" rel="stylesheet">
 </head>
@@ -13,6 +14,7 @@
 			<img class="profile-pic">
 			<p class="user-name">George Costanza<img src="images/arrow-down.svg" class="arrow-down" alt=""></p>
 		</div>
+		<div class="side-nav-links">
 		<ul class="side-main">
 			<h5 class="side-nav-title">Main</h5>
 			<li><a class="nav-link"><img src="images/home.svg" class="nav-icons" id="home">Home</a></li>
@@ -21,6 +23,7 @@
 			<li><a class="nav-link"><img src="images/tasks.svg" class="nav-icons" id="tasks">Tasks</a></li>
 			<li><a class="nav-link"><img src="images/calendar.svg" class="nav-icons" id="calendar">Calendar</a></li>
 		</ul>
+		</div>
 		<ul class="side-admin">
 			<h5 class="side-nav-title">Admin</h5>
 			<li><a class="nav-link"><img src="images/users.svg" class="nav-icons" id="users">Users</a></li>
@@ -31,40 +34,36 @@
 		</ul>
 		<ul class="side-category">
 			<h5 class="side-nav-title">Categories</h5>
-			<li><a class="nav-link">Administrative</a></li>
-			<li><a class="nav-link">Design</a></li>
-			<li><a class="nav-link">Executive</a></li>
-			<li><a class="nav-link">Human Resources</a></li>
+			<li><a class="nav-link"><img src="images/yellow-check-box.svg" class="nav-icons">Administrative</a></li>
+			<li><a class="nav-link"><img src="images/blue-check-box.svg" class="nav-icons">Design</a></li>
+			<li><a class="nav-link"><img src="images/red-check-box.svg" class="nav-icons">Executive</a></li>
+			<li><a class="nav-link"><img src="images/green-check-box.svg" class="nav-icons">Human Resources</a></li>
 		</ul>
 	</aside>
 	<section class="right-section">
 		<article class="top-search-area">
 			<div class="search-icon search-area-icon-0">
-				
 			</div>
-
+			<div class="search-icon search-area-icon-1">
+			</div>
 			<div class="search-bar">
-				<img src="images/search.svg" class="search-icon">
 				<input type="text" class="search-input" placeholder="Search for a job, task or resume">
 			</div>
-
 			<div class="search-icon search-area-icon-2">
-
 			</div>
 			<div class="search-icon search-area-icon-3">
-				
 			</div>
-			<div class="search-icon search-area-icon-4">
-				
+			<div class="search-icon search-area-icon-4">	
 			</div>
 		</article>
+		<div class="background">
 		<article class="title-box"> 
         <div class="position-title-box"> 
           <h1 class="position-title">Architect - Vandelay Industries</h1> 
-          <p class="location">New York, NY &bull; <a class="preview-post" href="#">Preview this post</a></p>
+          <p class="location"><img src="images/location2.svg" alt="" class="city-location">New York, NY &bull; <a class="preview-post" href="#">Preview this post</a></p>
         </div>
         <div class="title-buttons">
-        	<button>OPEN</button>
+        	<button class="open-button"><img src="images/green-dot.svg" class="green-dot" alt="">OPEN</button>
         	<button class="title-button ribbon"></button>
         	<button class="title-button pencil"></button>
         	<button class="title-button trash"></button> 
@@ -79,13 +78,47 @@
       	<p class="tab-button">Broadcast</p>
       	<p class="tab-button">Notifications</p>
       </div>
+      </div>
       <article class="graph-section">
+      	<div class="graph-and-button">
       	<div class="circle-graphs">
+      		<!-- graph 1 -->
+      		<div class="c100 p75 blue">
+  					<span>3,154<br>
+  					Applicants
+  					</span>
+  					<div class="slice">
+    				<div class="bar"></div>
+    				<div class="fill"></div>
+  					</div>
+					</div>
+					<!-- graph 2 -->
+					<div class="c100 p35 orange">
+  					<span>1,546<br>
+  					Interviews</span>
+  					<div class="slice">
+    				<div class="bar"></div>
+    				<div class="fill"></div>
+  					</div>
+					</div>
+					<!-- graph 3 -->
+					<div class="c100 p14 green">
+  					<span>912<br>
+  					Forwards
+  					</span>
+  					<div class="slice">
+    				<div class="bar"></div>
+    				<div class="fill"></div>
+  					</div>
+					</div>
+					<p class="totals">TOTALS - Out of 5,231 views</p>
+        </div>
         </div>
       <div class="close-top-img">
       </div>
       <div class="graph-box">
-      	<img src="bar-graph.jpg" class="bar-graph-img"> 
+      	<img src="images/graph.png" class="bar-graph-img" alt="bar graph for days of week"> 
+      	<p class="applicants-day">APPLICANTS/DAY</p>
       </div>
       </article>
       <article class="bottom-section"> 
@@ -113,11 +146,11 @@
         	</div>
         	<div class="description-info">
         		<p class="description-title">Status</p>
-          	<p class="description-info-text">Made-up</p>
+          	<p class="description-info-text">I always wanted to pretend I was an architect</p>
         	</div>
         	<div class="description-info">
           	<p class="description-title">Description</p>
-          	<p class="description-info-text">Frank Costanza: A Festivus for the rest of us! Jerry: Maybe your yogurt isn't so non-fat. Kramer: Oh, guess again, tubby. Newman: Just remember, when you control the mail, you control... information. Elaine: There's nothing more sophisticated than diddling the maid and then chewing some gum.
+          	<p class="description-info-text">Nothing is higher than architect
           </p>
         </div>
         <div class="description-info">
@@ -125,7 +158,7 @@
           <p class="description-info-text">
             <img src="images/vandelay.jpg" alt="" class="vandelay-pic">Art Vandelay</p>
         </div>
-        <div class="description-info">
+        <div class="description-info approved-salary">
           <p class="description-title">Approved Salary</p>
           <p class="description-info-text">$100,000</p>
         </div>
@@ -145,32 +178,32 @@
       		</div>
       		<div class="job-links-section">
       			<div class="sharing-titles">
-   						<img src="images/globe.svg" class="sharing-icons" alt="">
+   						<img src="images/earth.svg" class="sharing-icons" alt="">
    						<h3>Link to this Job</h3>
       			</div>
-   						<p class="sharing-descriptions">Jerry: Introducing 'Lite'. The new way to spell 'Light' but with twenty percent fewer letters!</p>
+   						<p class="sharing-descriptions">Just to be clear, this is not a city planner job. Architect is much better than city planner.</p>
    						<div class="share-job-box">
-   							<input type="text" class="share-link"> <button class="copy-btn"></button>
+   							<input type="text" class="share-link" placeholder="   http://vandelay.net/architect"> <button class="copy-btn">Copy</button>
    						</div>
       		</div>
       		<div class="job-links-section">
-      			<div class="sharing-titles">
-   						<img src="images/globe.svg" class="sharing-icons" alt="">
-   						<h3>Link to this Job</h3>
+      			<div class="sharing-titles button-widget">
+   						<img src="images/share.svg" class="sharing-icons" alt="">
+   						<h3>Use the Button Widget</h3>
       			</div>
-   						<p class="sharing-descriptions">Jerry: Introducing 'Lite'. The new way to spell 'Light' but with twenty percent fewer letters!</p>
+   						<p class="sharing-descriptions">Get a constant stream of jobs including marine biologist, latex importer/exporter and many more.</p>
    						<div class="share-job-box">
-   							<input type="text" class="share-link"><button class="copy-btn"></button>
+   							<input type="text" class="share-link" placeholder="   <script src=vandelay/script.js></script>"><button class="copy-btn">Copy</button>
    					</div>
       	</div>
       	<div class="job-links-section">
-      			<div class="sharing-titles">
-   						<img src="images/globe.svg" class="sharing-icons" alt="">
-   						<h3>Link to this Job</h3>
+      			<div class="sharing-titles upload-resumes">
+   						<img src="images/paper-plane.svg" class="sharing-icons" alt="">
+   						<h3>Upload Resumes by Email</h3>
       			</div>
-   						<p class="sharing-descriptions">Jerry: Introducing 'Lite'. The new way to spell 'Light' but with twenty percent fewer letters!</p>
+   						<p class="sharing-descriptions">Looking for a solid 2.0 GPA. Right in the meaty part of the curve. Not showing off, not falling behind.</p>
    						<div class="share-job-box">
-   							<input type="text" class="share-link"><button class="copy-btn"></button>
+   							<input type="text" class="share-link" placeholder="   a.vandelay@vandelayindustries.net">
    						</div>
    					</div>
    				</div>

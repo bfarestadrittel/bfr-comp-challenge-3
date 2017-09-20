@@ -1,8 +1,10 @@
 * {
 	box-sizing: border-box;
+	outline: none;
 }
 
 body {
+	background-color: #EDF2F6;
 	display: flex;
 	font-family: 'Open sans', sans-serif;
 	height: 100%;
@@ -14,13 +16,13 @@ body {
 .left-sidebar {
 	background-color: #354052;
 	color: #A6B1C3;
-	height: 100%;
-	width: 15%;
+	height: 1500px;
+	width: 20%;
 }
 
 .user-profile {
 	align-items: center;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid #303030;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 0px;
@@ -40,6 +42,10 @@ body {
 	margin-bottom: 20px;
 }
 
+.user-name:hover {
+	color: #fff;
+}
+
 .arrow-down {
 	height: 10px;
 	margin-left: 5px;
@@ -48,9 +54,10 @@ body {
 .side-main,
 .side-admin,
 .side-category {
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid #303030;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	padding-bottom: 15px;
 	padding-right: 35px;
 	padding-left: 25px;
@@ -74,9 +81,15 @@ ul {
 }
 
 li {
+	letter-spacing: .5px;
 	line-height: 250%;
 	padding-bottom: 5px;
 }
+
+li:hover {
+	color: white;
+}
+
  .nav-icons {
  	margin-right: 8px;
  	width: 20px;
@@ -85,21 +98,22 @@ li {
  /*02. Top Search Formatting*/
 
  .right-section {
- 	width: 80%;
+ 	width: 100%;
  }
 
  .top-search-area {
- 	border: 2px solid red;
+ 	background-color: #fff;
+ 	border-bottom: 1px solid #9BA2AD;
  	display: flex;
  	flex-direction: row;
  	height: 75px;
+ 	justify-content: space-between;
  	width: 100%;
  }
 
  .search-icon {
- 	height: 30px;
- 	margin-top: 15px;
- 	width: 30px;
+ 	height: 100%;
+ 	width: 8%;
  }
 
  .search-area-icon-0 {
@@ -107,7 +121,22 @@ li {
  	background-size: 30px 30px;
  	background-position: center;
  	background-repeat: no-repeat;
- 	border: 2px solid red;
+ 	padding: 25px;
+ }
+
+ .search-area-icon-0:hover,
+ .search-area-icon-2:hover,
+ .search-area-icon-3:hover,
+ .search-area-icon-4:hover {
+ 	background-color: #1DCAFF;
+ }
+
+ .search-area-icon-1 {
+ 	background-image: url('images/search.svg');
+ 	background-size: 30px 30px;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ 	border-left: 1px solid #9BA2AD;
  	padding: 25px;
  }
 
@@ -116,7 +145,7 @@ li {
 	background-size: 30px 30px;
  	background-position: center;
  	background-repeat: no-repeat;
- 	border: 2px solid red;
+ 	border-left: 1px solid #9BA2AD;
  	padding: 25px;
 }
 
@@ -125,7 +154,7 @@ li {
 	background-size: 30px 30px;
  	background-position: center;
  	background-repeat: no-repeat;
- 	border: 2px solid red;
+ 	border-left: 1px solid #9BA2AD;
  	padding: 25px;
 }
 
@@ -134,7 +163,7 @@ li {
 	background-size: 30px 30px;
  	background-position: center;
  	background-repeat: no-repeat;
- 	border: 2px solid red;
+ 	border-left: 1px solid #9BA2AD;
  	padding: 25px;
 }
 
@@ -145,11 +174,11 @@ li {
 	width: 60vw;
 }
 
-/*03. Title Section Formatting*/
+/*03. Company & Title Section Formatting*/
 
 .title-box {
 	align-items: center;
-	border: 2px solid red;
+	background-color: #fff;
 	display: flex;
 	height: 180px;
 	justify-content: space-between;
@@ -157,13 +186,81 @@ li {
 }
 
 .position-title-box {
+	color: #585858;
 	margin-left: 35px;
+}
+
+.city-location {
+	margin-right: 5px;
+	width: 15px;
+}
+
+.preview-post {
+	color: #1DCAFF;
+	text-decoration: none;
+}
+
+.preview-post:hover {
+	text-decoration: underline;
+}
+
+/* 03A. Buttons*/
+
+.title-buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 100px;
+	width: 220px;
+}
+
+.green-dot {
+	margin-right: 10px;
+	width: 15px;
+}
+
+.title-button {
+	background-color: #fff;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	border: 2px solid #8F939C;
+	border-radius: 50%;
+	height: 35px;
+	width: 35px;
+}
+
+.open-button {
+	align-items: center;
+	background-color: #fff;
+	border: 2px solid #8F939C;
+	border-radius: 20px;
+	color: #8F939C;
+	display: flex;
+	font-size: 12px;
+	height: 35px;
+	width: 85px;
+}
+
+.ribbon {
+	background-image: url("images/ribbon.svg");
+}
+
+.pencil {
+	background-image: url("images/pencil.svg");
+}
+
+.trash {
+	background-image: url("images/trash.svg");
+}
+
+.background {
+	background-color: #fff;
 }
 
 /*04. Tab Links Formatting*/
 
 .tab-button-list {
-	border: 2px solid red;
+	background-color: #fff;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -172,37 +269,83 @@ li {
 }
 
 .tab-button {
-	color: #9BA2AD;
+	color: #8F939C;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding-bottom: 8px;
+	text-transform: uppercase;
+}
+
+.tab-button:hover {
+	border-bottom: 3px solid #1DCAFF;
+	color: #585858;
 }
 
 /*05. Graph Section Formatting*/
 
 .graph-section {
 	background-color: #EDF2F6;
-	border: 2px solid red;
+	border-bottom: 1px solid #9BA2AD;
 	display: flex;
-	height: 300px;
-	width: 100%;
+	height: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
 }
 
-.circle-graphs {
-	border: 2px solid red;
-	height: 300px;
+.graph-and-button {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	height: 350px;
+	justify-content: space-around;
+	padding-top: 10px;
+	text-align: center;
 	width: 50%;
 }
 
 .graph-box {
-	border: 2px solid red;
-	height: 300px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 350px;
+	justify-content: center;
 	width: 50%;
+}
+
+.totals {
+	border-bottom: 1px solid #585858;
+	color: #585858;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.bar-graph-img {
+	height: 75%;
+	width: 90%;
+}
+
+.applicants-day {
+	background-color: #fff;
+	border: 2px solid #8F939C;
+	border-radius: 20px;
+	color: #585858;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 8px;
+	text-align: center;
+	width: 150px;
 }
 
 /*06. Job Description Section Formatting*/
 
 .bottom-section {
 	background-color: #EDF2F6;
-	border: 2px solid red;
 	display: flex;
+	justify-content: space-around;
 	width: 100%;
 }
 
@@ -210,15 +353,18 @@ li {
 
 .full-description {
 	background-color: #fff;
-	border: 2px solid red;
+	border: none;
+	margin-top: 60px;
+	width: 55%;
 }
 
 .job-description {
 	align-items: center;
 	background-color: #6F7E95;
-	border: 2px solid red;
+	border: none;
 	color: #fff;
 	display: flex;
+	height: 80px;
 	justify-content: flex-start;
 }
 
@@ -228,66 +374,253 @@ li {
 
 .description-info {
 	align-items: center;
-	border-bottom: 1px solid red;
+	border-bottom: 1px solid #9BA2AD;
+	color: #585858;
 	display: flex;
+	height: 80px;
+	margin-left: 15px;
+	width: 95%;
+}
+
+.approved-salary {
+	border-bottom: none;
 }
 
 .description-title {
+	font-size: 14px;
+	font-weight: bold;
 	margin-left: 15px;
+	text-transform: uppercase;
 	width: 150px;
 }
 
 .description-info-text {
+	font-size: 14px;
 	margin-left: 50px;
 }
 
 /*08. Sharing Job Section Formatting*/
 
 .share-job-section {
-	border: 2px solid red;
+	margin-top: 60px;
+	width: 30%;
 }
 
 .facebook,
 .twitter,
 .linkedin {
-	border: 2px solid red;
+	align-items: center;
 	color: #fff;
-	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 .facebook {
 	background-color: #3B5998;
+	margin-bottom: 20px;
 }
 
 .twitter {
 	background-color: #1dcaff;
+	margin-bottom: 20px;
 }
 
 .linkedin {
 	background-color: #007bb6;
+	margin-bottom: 20px;
 }
 
-.job-links-section {
-	border: 2px solid red;
+.social-icons {
+	height: 25px;
+	margin-right: 40px;
+	width: 25px;
 }
 
 .sharing-titles {
-	border: 2px solid red;
+	align-items: center;
+	color: #585858;
+	display: flex;
+	flex-direction: row;
 }
 
 .sharing-descriptions {
-	border: 2px solid red;
+	color: #9BA2AD;
+	font-size: 12px;
+	line-height: 150%;
+}
+
+.button-widget {
+	border-top: 1px solid #9BA2AD;
+	margin-top: 20px;
+}
+
+.upload-resumes {
+	border-top: 1px solid #9BA2AD;
+	margin-top: 20px;
 }
 
 .share-job-box {
-	border: 2px solid red;
+	display: flex;
 }
 
+.sharing-icons {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 20px;
+}
 
+.share-link {
+	border: none;
+	font-size: 14px;
+	height: 40px;
+	width: 80%;
+}
 
+.copy-btn {
+	border: none;
+	background-color: #4EB8C0;
+	color: #fff;
+	font-size: 14px;
+	height: 40px;
+	width: 20%;
+}
 
+/*09. Responsive*/
 
+@media (max-width: 1100px) {
+	
+	.search-input {
+		width: 40vw;
+	}
 
+	.profile-pic {
+		height: 100px;
+		width: 100px;
+	}
+
+	li {
+		font-size: 12px;
+	}
+
+	.nav-icons {
+		height: 15px;
+		width: 15px;
+	}
+
+	.title-buttons {
+		margin-right: 10px;
+	}
+
+	.bar-graph-img {
+		height: 200px;
+		width: 350px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.left-sidebar {
+		display: none;
+	}
+
+	.bottom-section {
+		margin-bottom: 50px;
+	}
+
+	.graph-and-button {
+		width: 100%;
+	}
+
+	.graph-box {
+		display: none;
+	}
+
+	.graph-section {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.bottom-section {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.full-description {
+		width: 100%;
+	}
+
+	.share-job-section {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.position-title {
+		font-size: 20px;
+	}
+
+	.tab-button {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 650px) {
+	.tab-button-list {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.title-box {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.position-title-box,
+	.title-buttons {
+		width: 100%;
+	}
+
+	.top-search-area {
+		height: 50px;
+	}
+
+	.search-input {
+		font-size: 12px;
+		height: 40px;
+		margin-top: 5px;
+		padding: 0px;
+		width: 20px;
+	}
+}
+
+@media (max-width: 420px) {
+	.graph-section,
+	.graph-and-button {
+		display: none;
+	}
+
+	.search-icon {
+		background-size: 20px 20px;
+		width: 5%;
+	}
+}
+
+@media (max-width: 350px) {
+	.position-title {
+		font-size: 16px;
+	}
+
+	.location {
+		font-size: 12px;
+	}
+}
 
 
 
